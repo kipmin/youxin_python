@@ -130,6 +130,7 @@ def get_cars_in_Page(page):
                         # 如果这都获取不到就放到错误页里吧
                         with open('/root/youxin/err_page1', 'a', encoding='utf8') as f:
                             f.write(page + '\n')
+                        return
     cars = soup.select('.aimg')
     online_city = soup.select('dt#current_city_id')[0].get_text()
     car_count = 0;
