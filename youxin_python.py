@@ -8,18 +8,19 @@ import requests as rq
 from bs4 import BeautifulSoup as bs
 
 # 代理隧道验证信息
-proxyUser = 'HWH57XR1O2G9V9UD'
-proxyPass = 'D117C2F74F3EF341'
+# proxyUser = 'HWH57XR1O2G9****'
+# proxyPass = 'D117C2F74F3E****'
 
-proxyMeta = 'http://%(user)s:%(pass)s@proxy.abuyun.com:9020' % {
-    'host': proxyHost,
-    'port': proxyPort,
-}
+# proxyMeta = 'http://%(user)s:%(pass)s@proxy.abuyun.com:9020' % {
+#     'user': proxyUser,
+#     'pass': proxyPass,
+# }
 
-proxies = {
-    'http': proxyMeta,
-    'https': proxyMeta,
-}
+# proxies = {
+#     'http': proxyMeta,
+#     'https': proxyMeta,
+# }
+
 # 筛选出的优信超过2000车源的城市124个
 city_list = ['baoding', 'baoji', 'baotou', 'beijing', 'bengbu', 'binzhou', 'cangzhou', 'changchun', 'changde', 'changsha', 'changzhi', 'changzhou', 'chengde', 'chengdu', 'chongqing', 'dalian', 'daqing', 'datong', 'dazhou', 'deyang', 'dezhou', 'dongguan', 'dongying', 'eerduosi', 'foshan', 'fushun', 'fuzhou', 'ganzhou', 'guangzhou', 'guilin', 'guiyang', 'haerbin', 'handan', 'hangzhou', 'hefei', 'hengshui', 'hengyang', 'heze', 'huaibei', 'huainan', 'huhehaote', 'huizhou', 'huzhou', 'jiamusi', 'jian', 'jiangmen', 'jiaxing', 'jilin', 'jinan', 'jingzhou', 'jinhua', 'jinzhou', 'kunming', 'langfang', 'lanzhou', 'leshan', 'lianyungang', 'liaocheng', 'linfen', 'linyi', 'liuzhou', 'luan', 'luoyang', 'luzhou', 'mianyang', 'nanchang', 'nanchong', 'nanjing', 'nanning', 'nantong', 'ningbo', 'qingdao', 'qinhuangdao', 'qiqihaer', 'quanzhou', 'rizhao', 'shanghai', 'shangqiu', 'shantou', 'shaoxing', 'shenyang', 'shenzhen', 'shijiazhuang', 'shiyan', 'songyuan', 'suqian', 'suzhou', 'suzhouah', 'taian', 'taiyuan', 'taizhouzj', 'taizhou', 'tangshan', 'tianjin', 'weifang', 'wenzhou', 'wuhan', 'wuhu', 'wulumuqi', 'wuxi', 'xiamen', 'xian', 'xiangyang', 'xingtai', 'xinxiang', 'xinyang', 'xuchang', 'xuzhou', 'yancheng', 'yangzhou', 'yantai', 'yibin', 'yichang', 'yinchuan', 'yueyang', 'yuncheng', 'yongchuan', 'zaozhuang', 'zhengzhou', 'zhenjiang', 'zhongshan', 'zhuhai', 'zhuzhou', 'zibo']
 
